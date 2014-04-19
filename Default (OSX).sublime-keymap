@@ -1,0 +1,306 @@
+[
+  {
+    "keys": [
+      "tab"
+    ],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true
+      },
+      {
+        "key": "preceding_text",
+        "operator": "not_regex_match",
+        "operand": "[[:space:]]*",
+        "match_all": true
+      },
+      {
+        "key": "following_text",
+        "operator": "regex_contains",
+        "operand": "^[\"'\\)\\}\\]\\>]",
+        "match_all": true
+      },
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": false
+      },
+      {
+        "key": "has_next_field",
+        "operator": "equal",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "tab"
+    ],
+    "command": "move",
+    "args": {
+      "by": "words",
+      "forward": true
+    },
+    "context": [
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true
+      },
+      {
+        "key": "preceding_text",
+        "operator": "not_regex_match",
+        "operand": "[[:space:]]*",
+        "match_all": true
+      },
+      {
+        "key": "following_text",
+        "operator": "regex_contains",
+        "operand": "^[.,:;]",
+        "match_all": true
+      },
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": false
+      },
+      {
+        "key": "has_next_field",
+        "operator": "equal",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "tab"
+    ],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true
+      },
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.tex.latex",
+        "match_all": true
+      },
+      {
+        "key": "preceding_text",
+        "operator": "not_regex_match",
+        "operand": "[[:space:]]*",
+        "match_all": true
+      },
+      {
+        "key": "following_text",
+        "operator": "regex_contains",
+        "operand": "^[$]",
+        "match_all": true
+      },
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": false
+      },
+      {
+        "key": "has_next_field",
+        "operator": "equal",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "alt+up"
+    ],
+    "command": "move",
+    "args": {
+      "by": "stops",
+      "empty_line": true,
+      "forward": false
+    }
+  },
+  {
+    "keys": [
+      "alt+down"
+    ],
+    "command": "move",
+    "args": {
+      "by": "stops",
+      "empty_line": true,
+      "forward": true
+    }
+  },
+  {
+    "keys": [
+      "alt+k"
+    ],
+    "command": "move",
+    "args": {
+      "by": "stops",
+      "empty_line": true,
+      "forward": false
+    },
+    "context": [
+      {
+        "key": "setting.command_mode",
+        "operand": true
+      },
+      {
+        "key": "setting.is_widget",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "alt+j"
+    ],
+    "command": "move",
+    "args": {
+      "by": "stops",
+      "empty_line": true,
+      "forward": true
+    },
+    "context": [
+      {
+        "key": "setting.command_mode",
+        "operand": true
+      },
+      {
+        "key": "setting.is_widget",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "j",
+      "j"
+    ],
+    "command": "exit_insert_mode",
+    "context": [
+      {
+        "key": "setting.command_mode",
+        "operand": false
+      },
+      {
+        "key": "setting.is_widget",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "v",
+      "v"
+    ],
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Default/Add Line.sublime-macro"
+    },
+    "context": [
+      {
+        "key": "setting.command_mode",
+        "operand": false
+      },
+      {
+        "key": "setting.is_widget",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": [
+      "`"
+    ],
+    "command": "hide_auto_complete",
+    "context": [
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": true
+      }
+    ]
+  },
+  {
+    "keys": [
+      "s"
+    ],
+    "command": "set_action_motion",
+    "args": {
+      "action": "enter_insert_mode",
+      "action_args": {
+        "insert_command": "right_delete"
+      },
+      "motion": "expand_selection"
+    },
+    "context": [
+      {
+        "key": "setting.command_mode"
+      }
+    ]
+  },
+  {
+    "keys": [
+      "alt+f1"
+    ],
+    "command": "open_dir",
+    "args": {
+      "dir": "$file_path",
+      "file": "$file_name"
+    }
+  },
+  {
+    "keys": [
+      "super+o"
+    ],
+    "command": "open_in_browser"
+  },
+  {
+    "keys": [
+      "ctrl+alt+b"
+    ],
+    "command": "show_panel",
+    "args": {
+      "panel": "output.exec"
+    }
+  },
+  {
+    "keys": [
+      "ctrl+o"
+    ],
+    "command": "fuzzy_start_from_file"
+  },
+  {
+    "keys": [
+      "ctrl+shift+o"
+    ],
+    "command": "fuzzy_bookmarks_load"
+  },
+  {
+    "keys": [
+      "f12"
+    ],
+    "command": "goto_definition"
+  },
+  {
+    "keys": [
+      "f1"
+    ],
+    "command": "reveal_in_side_bar"
+  }
+]

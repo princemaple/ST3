@@ -1,0 +1,32 @@
+{
+	"installed_packages":
+	[
+		"ApplySyntax",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"FuzzyFileNav",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"LESS",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Monokai Extended",
+		"OmniMarkupPreviewer",
+		"PowerCursors",
+		"Pretty JSON",
+		"RegReplace",
+		"Sass",
+		"SCSS",
+		"SideBarEnhancements",
+		"Terminal",
+		"Text Pastry",
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"VAlign",
+		"Vintageous"
+	]
+}
