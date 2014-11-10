@@ -1,0 +1,7 @@
+[
+  {
+    "caption": "Reg Replace: Append semicolons",
+    "command": "reg_replace",
+    "args": { "replacements": ["append_semi_colons"] }
+  }
+]

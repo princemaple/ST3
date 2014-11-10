@@ -1,0 +1,52 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"auto_find_in_selection": true,
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 3,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Wombat Extended/Wombat Extended.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Terminal",
+		"RSense",
+		"RSpec",
+		"Text Pastry",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"Markdown Preview",
+		"PlainTasks",
+		"Markdown",
+		"AngularJS",
+		"Better CoffeeScript",
+		"SublimeLinter",
+		"Vintageous",
+		"DrSync"
+	],
+	"index_exclude_patterns":
+	[
+		"/Users/pochen/Code/Random/hpoc/vendor*",
+		"*.log",
+		"/Users/pochen/Code/zendesk/hercules/tmp/repos*",
+		"/Users/pochen/Code/zendesk/hercules/tmp*"
+	],
+	"rulers":
+	[
+		80,
+		120
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_completion": false,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": false,
+	"trim_trailing_white_space_on_save": true
+}

@@ -1,0 +1,9 @@
+[
+	{
+		"args":
+		{
+			"close_panel": true
+		},
+		"command": "replace_all"
+	}
+]

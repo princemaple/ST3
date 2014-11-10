@@ -1,0 +1,3 @@
+{
+  "ignored_renderers": ["LiterateHaskellRenderer", "TextitleRenderer", "PodRenderer", "CreoleRenderer"]
+}

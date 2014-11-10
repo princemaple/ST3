@@ -1,0 +1,9 @@
+{
+  "replacements": {
+    "append_semi_colons": {
+      "find": "([)}\\]])\\n",
+      "replace": "\\1;\\n"
+    },
+  },
+  "selection_only": true
+}
