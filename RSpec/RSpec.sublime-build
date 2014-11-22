@@ -1,12 +1,11 @@
 {
-	"cmd": ["rspec", "-I ${file_path}", "$file"],
+	"cmd": ["bundle", "exec","rspec", "$file"],
 	"file_regex": "# ([A-Za-z:0-9_./ ]+rb):([0-9]+)",
 	"working_dir": "${project_path:${folder:${file_path}}}",
 	"selector": "source.ruby.rspec",
   "path": "/opt/boxen/rbenv/shims:bin:/opt/boxen/homebrew/share/python:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/opt/boxen/rbenv/shims:bin:/opt/boxen/homebrew/share/python:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin",
 
-	"windows":
-	{
+	"windows": {
 		"cmd": ["rspec.bat", "-I ${file_path}", "$file"]
 	}
 }
